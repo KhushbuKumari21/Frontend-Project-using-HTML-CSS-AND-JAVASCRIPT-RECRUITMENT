@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Candidate Search</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="container">
+        <h1>Candidate Search</h1>
+        
+        <label for="location">Location:</label>
+        <input type="text" id="location">
+        
+        <label for="jobRole">Job Role:</label>
+        <select id="jobRole">
+            <option value="">All</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Designer">Designer</option>
+            <option value="Manager">Manager</option>
+        </select>
+        
+        <button onclick="searchCandidates()">Search</button>
+        
+        <div id="candidates">
+            <h2>Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Job Role</th>
+                    </tr>
+                </thead>
+                <tbody id="candidatesList"></tbody>
+            </table>
+        </div>
+    </div>
+    
+   
+  <script src="script2.js"></script>
+</body>
+</html>
